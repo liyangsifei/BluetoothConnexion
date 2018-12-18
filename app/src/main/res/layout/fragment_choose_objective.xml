@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <CheckBox
+                android:id="@+id/f2_cb_objective1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option1" />
+
+            <CheckBox
+                android:id="@+id/f2_cb_objective2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option2" />
+
+            <CheckBox
+                android:id="@+id/f2_cb_objective3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option3" />
+
+            <CheckBox
+                android:id="@+id/f2_cb_objective4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option4" />
+
+            <CheckBox
+                android:id="@+id/f2_cb_objective5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/option5" />
+        </LinearLayout>
+        <Button
+            android:id="@+id/f2_btn_valide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ok"
+            android:layout_marginTop="8dp"/>
+
+
+</LinearLayout>

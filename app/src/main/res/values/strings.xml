@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Bluetooth Transmission</string>
+    <string name="noconnect">No Connexion</string>
+    <string name="ok">VALIDE</string>
+    <string name="option3">jeu de jambe</string>
+    <string name="option2">revers</string>
+    <string name="option1">coup droit</string>
+    <string name="option4">service</string>
+    <string name="option5">retour de service</string>
+    <string name="text">details of exercise chosen</string>
+    <string name="accept">ACCEPT</string>
+    <string name="refuse">REFUSE</string>
+    <string name="game">GAME</string>
+</resources>
