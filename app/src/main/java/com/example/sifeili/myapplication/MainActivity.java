@@ -85,6 +85,8 @@ public class MainActivity extends AppCompatActivity implements TransMessageListe
     private List<BluetoothDevice> devicesFound = new ArrayList<BluetoothDevice>();
     private List<BluetoothDevice> devicesConnected = new ArrayList<BluetoothDevice>();
     private BluetoothDevice device;
+
+    //BroadcastReceiver pour recevoir les notifications envoyées par le système (l'état de Bluetooth) et faire différentes manipulations
     private BroadcastReceiver broadcastReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(Context context, Intent intent) {
@@ -174,6 +176,7 @@ public class MainActivity extends AppCompatActivity implements TransMessageListe
                     } else if(tempMsg.equals("0")) {
                     //Si message est 1, c'est l'autre appareil a accepté son invitation
                     } else if(tempMsg.equals("1")) {
+                        //Pour reinitialiser les valeurs d'objetive choisi
                         objectiveChosen = null;
                         objectiveReceived = null;
                         objectiveTotal = null;
@@ -410,7 +413,7 @@ public class MainActivity extends AppCompatActivity implements TransMessageListe
         ActivityCompat.requestPermissions(this,
                 new String[]{Manifest.permission.ACCESS_COARSE_LOCATION},
                 MY_PERMISSIONS_REQUEST_ACCESS_COARSE_LOCATION);
-        //Search
+        //Chaque fois il fait des recherche, la liste va être
         listDevicesFound.clear();
         devicesFoundAdapter.notifyDataSetChanged();
         listDevicesBounded.clear();

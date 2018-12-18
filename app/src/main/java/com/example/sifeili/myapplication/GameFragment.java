@@ -12,6 +12,7 @@ public class GameFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle saveInstanceState) {
 
+        //Charger le fragment Game
         View view = inflater.inflate(R.layout.fragment_game, null);
 
         return view;
